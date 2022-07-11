@@ -1,0 +1,8 @@
+.custom-css-1 {
+  background-image: url("../../assets/bg2.svg");
+  height: 550px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1320px 520px;
+  /* overflow-x: hidden; */
+}
