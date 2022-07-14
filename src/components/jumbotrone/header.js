@@ -4,12 +4,12 @@ import header_image from "../../assets/Header.png";
 import { BsArrowRight } from "react-icons/bs";
 const Header = () => {
   return (
-    <div className="bg-white custom-css-1 relative px-14 py-20">
+    <div className="bg-white custom-css-1 relative px-14 py-20 mb-36">
       <h1 className="font-[inter] font-bold text-[48px]">I'm Eric Olatunji</h1>
       <h1 className="font-[inter] font-bold text-[48px] mb-8">
         <span className="text-[#FFB400]">Front-End</span> Developer
       </h1>
-      <p className="text-[16px] text-[#767676] text-justify w-[40%] mb-12">
+      <p className="text-[16px] text-[#767676] text-justify w-[40%] mb-12 z-20">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat
         feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc
         lectus.
@@ -33,3 +33,14 @@ const Header = () => {
 };
 
 export default Header;
+
+// ::after {
+//   content: "";
+//   display: block;
+//   position: relative;
+//   width: 10px;
+//   border-radius: 50%;
+//   background-color: yellow;
+//   height:10px;
+//   top:-20px;
+//   left: 50px
