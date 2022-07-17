@@ -13,7 +13,7 @@ const Info = () => {
     <div className="font-[inter] container mx-auto px-4 bg-white">
       <div className="flex flex-col items-center pb-10 border-b-[1px] border-[#F0F0F6]">
         <div className="after:content after:block after:relative after:rounded-[50px] after:bg-[#7EB942] after:h-4 after:w-4 after:-top-6 after:left-28 mt-10">
-          <img src={Logo} alt="status image" />
+          <img src={Logo} alt="status" />
         </div>
         <div className="flex flex-col items-center mb-4">
           <h1 className="text-[18px] text-[#2B2B2B] font-semibold mb-3">

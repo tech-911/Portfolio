@@ -4,22 +4,29 @@ import Menu from "../../components/fixed_menu/menu";
 import Info from "../../components/info/info";
 import "./home.css";
 import Services from "../myServices/service";
+import Recommendations from "../recommendations/recommendations";
+import Education from "../../components/Education/education";
+import WorkExperience from "../../components/workExperience/work";
 
 const Home = () => {
   return (
-    <div className="w-screen h-screen flex flex-row bg-[#F0F0F6]">
+    <div className="w-full h-screen flex flex-row bg-[#F0F0F6] overflow-hidden">
       <div className="flex-1 h-full flex">
         <div className="w-[25%] h-full overflow-y-auto info-wrapper">
           <Info />
         </div>
+
         <div className="w-[75%] h-full overflow-y-auto header-wrapper">
           <div className="w-full px-5 box-border ">
             <Header />
             <Services />
+            <Recommendations />
+            <Education />
+            <WorkExperience />
           </div>
         </div>
       </div>
-      <div className="menu-wrapper">
+      <div className="menu-wrapper min-w-[100px] w-[100px] h-full overflow-y-auto">
         <Menu />
       </div>
     </div>

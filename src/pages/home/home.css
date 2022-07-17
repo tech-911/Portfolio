@@ -1,6 +1,6 @@
-.menu-wrapper {
+/* .menu-wrapper {
   @apply w-[100px] h-full overflow-y-auto;
-}
+} */
 
 .menu-wrapper::-webkit-scrollbar {
   display: none;
