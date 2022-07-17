@@ -1,7 +1,7 @@
 import React from "react";
 import Topic from "../../components/topic";
 import Table from "../table/table";
-import data from "../../components/Education/data";
+import data from "./data";
 
 const Education = () => {
   return (

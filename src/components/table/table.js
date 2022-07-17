@@ -6,6 +6,7 @@ const Table = ({ data }) => {
       {data.map((value, id) => {
         return (
           <div
+          key={value.id}
             className={`flex items-start justify-between font-[inter] ${
               value.borderBottom ? "border-b-[#F0F0F6] border-b-[1px]" : ""
             }  mb-6`}
