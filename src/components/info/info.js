@@ -141,14 +141,14 @@ const Info = () => {
           className="text-[16px] text-black font-semibold  px-6 py-3 bg-[#FFB400] w-full mb-5"
           type="button"
         >
-          <Link
-            to="/CV.docx"
-            download
+          <a
             className="flex items-center justify-between"
+            href="/CV.docx"
+            download
           >
             <p className="text-[14px] font-bold">DOWNLOAD CV</p>
             <BiDownload className="text-[20px]" />
-          </Link>
+          </a>
         </button>
       </div>
     </div>
