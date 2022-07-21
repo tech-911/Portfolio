@@ -23,15 +23,24 @@ const Info = () => {
         </div>
 
         <div className="flex w-full items-center justify-center px-12">
-          <div className="rounded-[50%] bg-[#FFB400] p-1.5">
+          <a
+            href="https://wa.me/09036861277"
+            className="rounded-[50%] bg-[#FFB400] p-1.5"
+          >
             <IoLogoWhatsapp className="text-[#2B2B2B]" />
-          </div>
-          <div className="rounded-[50%] bg-[#FFB400] p-1.5 ml-2">
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100080934143818"
+            className="rounded-[50%] bg-[#FFB400] p-1.5 ml-2"
+          >
             <FaFacebookF className="text-[#2B2B2B]" />
-          </div>
-          <div className="rounded-[50%] bg-[#FFB400] p-1.5 ml-2">
+          </a>
+          <a
+            href="https://www.linkedin.com/in/babatunde-olatunji-6658b323a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BxLFkgWF3TN2psCQh86Wung%3D%3D"
+            className="rounded-[50%] bg-[#FFB400] p-1.5 ml-2"
+          >
             <FaLinkedinIn className="text-[#2B2B2B]" />
-          </div>
+          </a>
         </div>
       </div>
       <div className="flex flex-col items-center pb-6 border-b-[1px] border-[#F0F0F6] mt-8">
@@ -56,10 +65,10 @@ const Info = () => {
         <div className="w-full">
           <div className="flex items-center justify-between w-full mb-3">
             <p className="text-[15px] text-[#767676] ">English</p>
-            <p className="text-[15px] text-[#767676] ">100%</p>
+            <p className="text-[15px] text-[#767676] ">90%</p>
           </div>
           <div className="w-full rounded-full px-0.5 py-0.5 border-[1px] border-[#FFB400]">
-            <div className="bg-[#FFB400] h-0.5 rounded-full w-[100%]"></div>
+            <div className="bg-[#FFB400] h-0.5 rounded-full w-[90%]"></div>
           </div>
         </div>
       </div>
@@ -80,38 +89,38 @@ const Info = () => {
         <div className="w-full mb-3">
           <div className="flex items-center justify-between w-full mb-3">
             <p className="text-[15px] text-[#767676] ">CSS</p>
-            <p className="text-[15px] text-[#767676] ">100%</p>
+            <p className="text-[15px] text-[#767676] ">80%</p>
           </div>
           <div className="w-full rounded-full px-0.5 py-0.5 border-[1px] border-[#FFB400]">
-            <div className="bg-[#FFB400] h-0.5 rounded-full w-[100%]"></div>
+            <div className="bg-[#FFB400] h-0.5 rounded-full w-[80%]"></div>
           </div>
         </div>
         <div className="w-full mb-3">
           <div className="flex items-center justify-between w-full mb-3">
             <p className="text-[15px] text-[#767676] ">Js</p>
-            <p className="text-[15px] text-[#767676] ">100%</p>
+            <p className="text-[15px] text-[#767676] ">75%</p>
           </div>
           <div className="w-full rounded-full px-0.5 py-0.5 border-[1px] border-[#FFB400]">
-            <div className="bg-[#FFB400] h-0.5 rounded-full w-[100%]"></div>
+            <div className="bg-[#FFB400] h-0.5 rounded-full w-[75%]"></div>
           </div>
         </div>
         <div className="w-full mb-3">
           <div className="flex items-center justify-between w-full mb-3">
             <p className="text-[15px] text-[#767676] ">React</p>
-            <p className="text-[15px] text-[#767676] ">100%</p>
+            <p className="text-[15px] text-[#767676] ">80%</p>
           </div>
           <div className="w-full rounded-full px-0.5 py-0.5 border-[1px] border-[#FFB400]">
-            <div className="bg-[#FFB400] h-0.5 rounded-full w-[100%]"></div>
+            <div className="bg-[#FFB400] h-0.5 rounded-full w-[80%]"></div>
           </div>
         </div>
 
         <div className="w-full mb-3">
           <div className="flex items-center justify-between w-full mb-3">
             <p className="text-[15px] text-[#767676] ">Figma</p>
-            <p className="text-[15px] text-[#767676] ">100%</p>
+            <p className="text-[15px] text-[#767676] ">75%</p>
           </div>
           <div className="w-full rounded-full px-0.5 py-0.5 border-[1px] border-[#FFB400]">
-            <div className="bg-[#FFB400] h-0.5 rounded-full w-[100%]"></div>
+            <div className="bg-[#FFB400] h-0.5 rounded-full w-[75%]"></div>
           </div>
         </div>
       </div>
