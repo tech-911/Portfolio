@@ -9,6 +9,7 @@ import Education from "../../components/Education/education";
 import WorkExperience from "../../components/workExperience/work";
 import Contact from "../../components/contact/contact";
 import Footer from "../../components/footer/footer";
+import Map from "../../components/map/map";
 
 const Home = () => {
   return (
@@ -27,14 +28,15 @@ const Home = () => {
               <Education />
               <WorkExperience />
               <Contact />
+              <Map />
             </div>
+            <Footer />
           </div>
         </div>
         <div className="menu-wrapper min-w-[100px] w-[100px] h-full overflow-y-auto">
           <Menu />
         </div>
       </div>
-      <Footer />
     </div>
 
     // <div className="flex items-start justify-between w-full h-full bg-[#F0F0F6]">

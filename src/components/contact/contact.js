@@ -27,7 +27,7 @@ const Contact = () => {
   };
   const form = useRef();
   return (
-    <div className="font-[inter]">
+    <div className="font-[inter] mb-10" id="contact">
       <div className="flex items-start justify-between mb-10">
         <h1 className="col-span-2 text-[25px] font-bold w-[60%]">
           Leave Us Your Info

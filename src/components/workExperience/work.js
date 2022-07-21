@@ -5,7 +5,7 @@ import data from "./data";
 
 const WorkExperience = () => {
   return (
-    <div className="mb-20">
+    <div className="mb-20" id="work">
       <div className="mb-10">
         <Topic
           heading="Work History"

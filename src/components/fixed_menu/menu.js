@@ -15,24 +15,24 @@ const Menu = () => {
         <RiContrast2Fill className="text-[23px] text-[#2B2B2B]" />
       </div>
 
-      <div className="rounded-[50%] p-1.5 hover:bg-[#FFB400] bg-[#F0F0F6] w-fit flex items-center justify-center mb-8">
+      <a href="#home" className="rounded-[50%] p-1.5 hover:bg-[#FFB400] bg-[#F0F0F6] w-fit flex items-center justify-center mb-8">
         <RiHome2Fill className="text-[23px] text-[#767676] hover:text-[#2B2B2B] " />
-      </div>
+      </a>
       <div className="rounded-[50%] p-1.5 hover:bg-[#FFB400] bg-[#F0F0F6] w-fit flex items-center justify-center mb-8">
         <FaFileCode className="text-[23px] text-[#767676] hover:text-[#2B2B2B]" />
       </div>
-      <div className="rounded-[50%] p-1.5 hover:bg-[#FFB400] bg-[#F0F0F6] w-fit flex items-center justify-center mb-8">
+      <a href="#education" className="rounded-[50%] p-1.5 hover:bg-[#FFB400] bg-[#F0F0F6] w-fit flex items-center justify-center mb-8">
         <FaUserGraduate className="text-[23px] text-[#767676] hover:text-[#2B2B2B]" />
-      </div>
+      </a>
       <div className="rounded-[50%] p-1.5 hover:bg-[#FFB400] bg-[#F0F0F6] w-fit flex items-center justify-center mb-8">
         <FaToolbox className="text-[23px] text-[#767676] hover:text-[#2B2B2B]" />
       </div>
       <div className="rounded-[50%] p-1.5 hover:bg-[#FFB400] bg-[#F0F0F6] w-fit flex items-center justify-center mb-8">
         <RiQuillPenFill className="text-[23px] text-[#767676] hover:text-[#2B2B2B]" />
       </div>
-      <div className="rounded-[50%] p-1.5 hover:bg-[#FFB400] bg-[#F0F0F6] w-fit flex items-center justify-center ">
+      <a href="#contact" className="rounded-[50%] p-1.5 hover:bg-[#FFB400] bg-[#F0F0F6] w-fit flex items-center justify-center ">
         <MdChatBubble className="text-[23px] text-[#767676] hover:text-[#2B2B2B]" />
-      </div>
+      </a> 
     </div>
   );
 };

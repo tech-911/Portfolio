@@ -5,7 +5,7 @@ import data from "./data";
 
 const Education = () => {
   return (
-    <div className="mb-20">
+    <div className="mb-20" id="education">
       <div className="mb-10">
         <Topic
           heading="Education"

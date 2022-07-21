@@ -4,7 +4,10 @@ import header_image from "../../assets/Header.png";
 import { BsArrowRight } from "react-icons/bs";
 const Header = () => {
   return (
-    <div className="bg-white custom-css-1 relative px-14 py-20 mb-36 container mx-auto">
+    <div
+      className="bg-white custom-css-1 relative px-14 py-20 mb-36 container mx-auto"
+      id="home"
+    >
       <h1 className="font-[inter] font-bold text-[48px]">I'm Eric Olatunji</h1>
       <h1 className="font-[inter] font-bold text-[48px] mb-8">
         <span className="text-[#FFB400]">Front-End</span> Developer

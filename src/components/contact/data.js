@@ -11,7 +11,7 @@ const contactInfoData = [
     {
       image: location,
       itemName: ["Country", "City", "Street"],
-      itemValue: ["Nigeria", "Minna", "Dutsenkura"],
+      itemValue: ["Nigeria", "Minna", "Opp. Mawo int."],
     },
   ],
   [
@@ -21,7 +21,7 @@ const contactInfoData = [
       itemValue: [
         "babatundeolatunjie9@gmail.com",
         "https://www.facebook.com/profile.php?id=100080934143818",
-        "Dutsenkura",
+        "https://www.linkedin.com/in/babatunde-olatunji-6658b323a/",
       ],
     },
   ],
