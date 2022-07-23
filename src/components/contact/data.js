@@ -35,3 +35,5 @@ const contactInfoData = [
 ];
 
 export default contactInfoData;
+
+

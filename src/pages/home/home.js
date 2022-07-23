@@ -20,7 +20,7 @@ const Home = () => {
             <Info />
           </div>
 
-          <div className="w-[75%] h-full overflow-y-auto header-wrapper">
+          <div className="w-[75%] h-full overflow-y-auto scroll-smooth header-wrapper">
             <div className="w-full px-5 box-border">
               <Header />
               <Services />
