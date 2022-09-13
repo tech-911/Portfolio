@@ -1,0 +1,21 @@
+@media only screen and (max-width: 642px) {
+  .table-responsive {
+    flex-direction: column !important;
+  }
+  .table-data-wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 94vw;
+  }
+  .item-1-res,
+  .item-2-res {
+    width: 100% !important;
+    text-align: justify !important;
+  }
+  .item-2-res {
+    margin-top: 30px;
+  }
+  .item-1a-res {
+    margin-bottom: 10px !important;
+  }
+}

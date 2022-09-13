@@ -1,4 +1,5 @@
 import React from "react";
+import "./topic.css";
 
 const Topic = ({ heading, value, size1, size2 }) => {
   return (

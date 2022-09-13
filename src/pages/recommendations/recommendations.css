@@ -18,16 +18,21 @@
   }
 }
 
-
 @media only screen and (max-width: 799px) and (min-width: 768px) {
- .carousel {
+  .carousel {
     width: 88vw !important;
     margin-left: 50px;
   }
 }
 
 @media only screen and (max-width: 680px) {
- .bottom-correction{
-  margin-bottom: 20px !important;
- }
+  .bottom-correction {
+    margin-bottom: 20px !important;
+  }
+  .carousel {
+    margin-left: unset !important;
+    margin-left: 13.5px !important;
+    width: 96vw !important;
+  }
+ 
 }
