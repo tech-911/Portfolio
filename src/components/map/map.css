@@ -4,3 +4,8 @@
     margin-right: 50px;
   }
 }
+@media only screen and (max-width: 670px) {
+  .map {
+    width: 94vw;
+  }
+}

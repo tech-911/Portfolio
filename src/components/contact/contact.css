@@ -4,3 +4,29 @@
     margin-right: 50px;
   }
 }
+
+@media only screen and (max-width: 686px) {
+  .contact-content-reponsive {
+    flex-direction: column !important;
+  }
+  .second-item-res {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .contact-item-1,
+  .contact-item-2 {
+    width: 94%;
+    align-self: center;
+  }
+  .contact-item-1{
+    margin-bottom: 50px;
+  }
+  .first-item-res{
+    display: none;
+  }
+  .form-text-res{
+    width: 100%;
+    margin-left: 10px;
+  }
+}

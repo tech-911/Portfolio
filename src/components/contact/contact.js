@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import ContactInfo from "../contact-info/contact-info";
 import contactInfoData from "./data";
 import emailjs from "emailjs-com";
-import "./contact.css"
+import "./contact.css";
 const Contact = () => {
   const handleForm = (e) => {
     e.preventDefault();
@@ -30,13 +30,19 @@ const Contact = () => {
   return (
     <div className="font-[inter] mb-10 container mx-auto contact" id="contact">
       <div className="flex items-start justify-between mb-10">
-        <h1 className="col-span-2 text-[25px] font-bold w-[60%]">
+        <h1 className="col-span-2 text-[25px] font-bold w-[60%] form-text-res">
           Leave Us Your Info
         </h1>
-        <h1 className="text-[25px] font-bold w-[37%]">Contact Information</h1>
+        <h1 className="text-[25px] font-bold w-[37%] first-item-res">
+          Contact Information
+        </h1>
       </div>
-      <div className="flex items-start justify-between">
-        <form onSubmit={handleForm} ref={form} className="col-span-3 w-[60%]">
+      <div className="flex items-start justify-between contact-content-reponsive">
+        <form
+          onSubmit={handleForm}
+          ref={form}
+          className="col-span-3 w-[60%] contact-item-1"
+        >
           <div className="bg-white p-6">
             <div className="flex flex-col items-start mb-4 ">
               <label htmlFor="name" className="text-[#767676] text-[18px] mb-2">
@@ -102,7 +108,12 @@ const Contact = () => {
             </button>
           </div>
         </form>
-        <div className="flex flex-col justify-center w-[37%]">
+
+        <div className="flex flex-col justify-center w-[37%] contact-item-2">
+          <h1 className="text-[25px] font-bold w-[37%] second-item-res hidden">
+            Contact Information
+          </h1>
+
           {contactInfoData.map((value, id) => {
             return <ContactInfo data={value} id={id} key={id} />;
           })}
