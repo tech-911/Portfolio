@@ -10,14 +10,14 @@ import ServiceWidget from "../../components/service/serviceWidget";
 
 const Services = () => {
   return (
-    <div className="font-[inter] mb-20 container mx-auto">
+    <div className="font-[inter] mb-20 container mx-auto service-css-1">
       <div className="mb-10">
         <Topic
           heading="My Services"
           value="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum"
         />
       </div>
-      <div className="grid grid-cols-3 gap-3">
+      <div className="grid grid-cols-3 gap-3 reset-grid">
         <ServiceWidget
           head="Web Development"
           text="Blog, E-Commerce"

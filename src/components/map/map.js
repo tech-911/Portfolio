@@ -1,8 +1,9 @@
 import React from "react";
+import "./map.css"
 
 const Map = () => {
   return (
-    <div className="w-full mb-10 ">
+    <div className="w-full mb-10 container mx-auto map">
       {" "}
       <iframe
         className="border-[2px] border-[#c4c2c2] rounded-lg"

@@ -5,7 +5,7 @@ const ServiceWidget = ({ head, text, image, link }) => {
   return (
     <div>
       {" "}
-      <div className="flex-1 flex flex-col items-center justify-center bg-white h-[232px] px-4">
+      <div className="flex-1 flex flex-col items-center justify-center bg-white h-[232px] px-4 service-component-1">
         {image ? (
           <img src={image} alt="service-logo-1" className="mb-10" />
         ) : (

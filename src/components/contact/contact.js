@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import ContactInfo from "../contact-info/contact-info";
 import contactInfoData from "./data";
 import emailjs from "emailjs-com";
+import "./contact.css"
 const Contact = () => {
   const handleForm = (e) => {
     e.preventDefault();
@@ -27,7 +28,7 @@ const Contact = () => {
   };
   const form = useRef();
   return (
-    <div className="font-[inter] mb-10" id="contact">
+    <div className="font-[inter] mb-10 container mx-auto contact" id="contact">
       <div className="flex items-start justify-between mb-10">
         <h1 className="col-span-2 text-[25px] font-bold w-[60%]">
           Leave Us Your Info

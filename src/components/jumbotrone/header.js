@@ -5,14 +5,14 @@ import { BsArrowRight } from "react-icons/bs";
 const Header = () => {
   return (
     <div
-      className="bg-white custom-css-1 relative px-14 py-20 mb-36 container mx-auto"
+      className="bg-white custom-css-1 relative px-14 py-20 mb-36 container mx-auto header-res1"
       id="home"
     >
       <h1 className="font-[inter] font-bold text-[48px]">I'm Eric Olatunji</h1>
       <h1 className="font-[inter] font-bold text-[48px] mb-8">
         <span className="text-[#FFB400]">Front-End</span> Developer
       </h1>
-      <p className="text-[16px] text-[#767676] text-justify w-[40%] mb-12 z-20">
+      <p className="text-[16px] text-[#767676] text-justify w-[40%] mb-12 z-20 res1">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat
         feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc
         lectus.

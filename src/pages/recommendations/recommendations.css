@@ -1,3 +1,33 @@
 .carousel {
   width: calc(74vw - 107px);
 }
+
+@media only screen and (max-width: 1155px) {
+  .carousel {
+    height: 30rem;
+  }
+}
+@media only screen and (max-width: 1182px) and (min-width: 640px) {
+  .carousel {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 639px) {
+  .carousel {
+    width: 100vw !important;
+  }
+}
+
+
+@media only screen and (max-width: 799px) and (min-width: 768px) {
+ .carousel {
+    width: 88vw !important;
+    margin-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+ .bottom-correction{
+  margin-bottom: 20px !important;
+ }
+}

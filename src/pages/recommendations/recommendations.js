@@ -33,8 +33,8 @@ const Recommendations = () => {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToScroll: 1,
+          initialSlide: 1,
         },
       },
       {
@@ -47,7 +47,7 @@ const Recommendations = () => {
     ],
   };
   return (
-    <div className="font-[inter] w-full container mx-auto mb-20">
+    <div className="font-[inter] w-full container mx-auto mb-20 bottom-correction">
       <div className="mb-10">
         <Topic
           heading="Recommendations"

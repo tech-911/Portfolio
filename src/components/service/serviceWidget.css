@@ -1,0 +1,8 @@
+@media only screen and (max-width: 680px) {
+  .service-component-1 {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    height: unset !important;
+    
+  }
+}

@@ -1,0 +1,16 @@
+@media only screen and (max-width: 799px) and (min-width: 768px) {
+  .service-css-1 {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .container {
+    width: unset !important;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .reset-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    padding-left: 13.5px;
+    padding-right: 13.5px;
+  }
+}
