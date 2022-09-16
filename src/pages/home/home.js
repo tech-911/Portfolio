@@ -10,24 +10,26 @@ import WorkExperience from "../../components/workExperience/work";
 import Contact from "../../components/contact/contact";
 import Footer from "../../components/footer/footer";
 import Map from "../../components/map/map";
-import { TbDotsVertical } from "react-icons/tb";
 import { RiMenuLine } from "react-icons/ri";
 import Portfolio from "../../components/portfolio/portfolio";
 import Logo from "../../assets/profileLogo.png";
 import { RiHome2Fill } from "react-icons/ri";
 import { FaFileCode } from "react-icons/fa";
 import { FaUserGraduate } from "react-icons/fa";
-import { RiContrast2Fill } from "react-icons/ri";
 import { FaToolbox } from "react-icons/fa";
 import { RiQuillPenFill } from "react-icons/ri";
-import { MdChatBubble } from "react-icons/md";
+import { MdChatBubble, MdClose } from "react-icons/md";
 
 const Home = () => {
   const [sidebar, setSidebar] = useState(0);
   useEffect(() => {
     const setviewvalue = () => {
-      if (window.innerWidth === 1182) {
-        setSidebar(0);
+      if (window.innerWidth >= 1182) {
+        if (sidebar === 0) {
+          return;
+        } else {
+          setSidebar(0);
+        }
       }
     };
     window.addEventListener("resize", setviewvalue);
@@ -42,24 +44,38 @@ const Home = () => {
           sidebar ? "" : "mb-3"
         }`}
       >
-        <RiMenuLine
-          className="text-[30px] cursor-pointer"
-          onClick={() => {
-            !sidebar ? setSidebar(1) : setSidebar(0);
-          }}
-        />
-        {/* <TbDotsVertical className="text-[30px]" /> */}
+        {sidebar ? (
+          <MdClose
+            className="text-[30px] cursor-pointer"
+            onClick={() => {
+              !sidebar ? setSidebar(1) : setSidebar(0);
+            }}
+          />
+        ) : (
+          <RiMenuLine
+            className="text-[30px] cursor-pointer"
+            onClick={() => {
+              !sidebar ? setSidebar(1) : setSidebar(0);
+            }}
+          />
+        )}
       </div>
-      <div className="relative overflow-hidden">
+      {/* ---------------------sidebar overlay---------------------- */}
+      <div className="relative overflow-hidden h-full">
         <div
+          onClick={() => {
+            setSidebar(0);
+          }}
           className={`res-sidebar-close absolute w-screen h-screen top-0 right-0 bg-black opacity-[0.5] z-50 ${
             sidebar ? "block" : "hidden"
           }`}
         ></div>
+        {/* ---------------------sidebar overlay end---------------------- */}
+
         {/* ----------------------------sidebar----------------------------- */}
         <div
           className={`res-sidebar-close absolute top-0 left-0 h-screen adjust-scroll bg-[white] z-[60] overflow-x-hidden overflow-y-scroll transition-all ease-in-out delay-200 ${
-            sidebar ? "w-[40%]" : "w-[0%]"
+            sidebar ? "w-[40%] res-width" : "w-[0%]"
           }`}
         >
           <div className="py-6 mb-6">
@@ -79,7 +95,10 @@ const Home = () => {
             </div>
             {/* --------------------------side bar items start-------------------------------- */}
             <div className="font-[inter] container mx-auto pl-10 flex flex-col items-center bg-white h-full">
-              <div className="flex items-center w-full hover:border-r-4 hover:border-[#FFB400] mb-8 cursor-pointer py-2">
+              <a
+                href="#home"
+                className="flex items-center w-full hover:border-r-4 hover:border-[#FFB400] mb-8 cursor-pointer py-2"
+              >
                 <a
                   href="#home"
                   className="rounded-[50%] p-1.5 bg-[#F0F0F6] w-fit flex items-center justify-center"
@@ -89,8 +108,11 @@ const Home = () => {
                 <p className="font-[inter] font-bold text-[24px] text-[#767676] ml-8">
                   Home
                 </p>
-              </div>
-              <div className="flex items-center w-full hover:border-r-4 hover:border-[#FFB400] mb-8 cursor-pointer py-2">
+              </a>
+              <a
+                href="#portfolio"
+                className="flex items-center w-full hover:border-r-4 hover:border-[#FFB400] mb-8 cursor-pointer py-2"
+              >
                 <a
                   href="#portfolio"
                   className="rounded-[50%] p-1.5 bg-[#F0F0F6] w-fit flex items-center justify-center"
@@ -100,8 +122,11 @@ const Home = () => {
                 <p className="font-[inter] font-bold text-[24px] text-[#767676] ml-8">
                   Portfolio
                 </p>
-              </div>
-              <div className="flex items-center w-full hover:border-r-4 hover:border-[#FFB400] mb-8 cursor-pointer py-2">
+              </a>
+              <a
+                href="#education"
+                className="flex items-center w-full hover:border-r-4 hover:border-[#FFB400] mb-8 cursor-pointer py-2"
+              >
                 <a
                   href="#education"
                   className="rounded-[50%] p-1.5 bg-[#F0F0F6] w-fit flex items-center justify-center"
@@ -111,8 +136,11 @@ const Home = () => {
                 <p className="font-[inter] font-bold text-[24px] text-[#767676] ml-8">
                   Education
                 </p>
-              </div>
-              <div className="flex items-center w-full hover:border-r-4 hover:border-[#FFB400] mb-8 cursor-pointer py-2">
+              </a>
+              <a
+                href="#work"
+                className="flex items-center w-full hover:border-r-4 hover:border-[#FFB400] mb-8 cursor-pointer py-2"
+              >
                 <a
                   href="#work"
                   className="rounded-[50%] p-1.5 bg-[#F0F0F6] w-fit flex items-center justify-center"
@@ -122,8 +150,11 @@ const Home = () => {
                 <p className="font-[inter] font-bold text-[24px] text-[#767676] ml-8">
                   Work History
                 </p>
-              </div>
-              <div className="flex items-center w-full hover:border-r-4 hover:border-[#FFB400] mb-8 cursor-pointer py-2">
+              </a>
+              <a
+                href="#blog"
+                className="flex items-center w-full hover:border-r-4 hover:border-[#FFB400] mb-8 cursor-pointer py-2"
+              >
                 <a
                   href="#blog"
                   className="rounded-[50%] p-1.5 bg-[#F0F0F6] w-fit flex items-center justify-center"
@@ -133,8 +164,11 @@ const Home = () => {
                 <p className="font-[inter] font-bold text-[24px] text-[#767676] ml-8">
                   Blog
                 </p>
-              </div>
-              <div className="flex items-center w-full hover:border-r-4 hover:border-[#FFB400] mb-8 cursor-pointer py-2">
+              </a>
+              <a
+                href="#contact"
+                className="flex items-center w-full hover:border-r-4 hover:border-[#FFB400] mb-8 cursor-pointer py-2"
+              >
                 <a
                   href="#contact"
                   className="rounded-[50%] p-1.5 bg-[#F0F0F6] w-fit flex items-center justify-center"
@@ -144,14 +178,14 @@ const Home = () => {
                 <p className="font-[inter] font-bold text-[24px] text-[#767676] ml-8">
                   Contact
                 </p>
-              </div>
+              </a>
             </div>
             {/* --------------------------side bar items ends-------------------------------- */}
           </div>
         </div>
         {/* -----------------------------sidebar ends------------------------------ */}
         <div
-          className={`w-full h-screen flex flex-row bg-[#F0F0F6] overflow-hidden  ${
+          className={`w-full h-full flex flex-row bg-[#F0F0F6] overflow-hidden  ${
             sidebar ? "blur-sm" : ""
           }`}
         >
@@ -160,7 +194,7 @@ const Home = () => {
               <Info />
             </div>
 
-            <div className="w-[75%] h-full overflow-y-auto scroll-smooth header-wrapper">
+            <div className="w-[75%] h-full overflow-y-scroll scroll-smooth header-wrapper">
               <div className="w-full px-5 box-border home-res-1">
                 <Header />
                 <Portfolio />

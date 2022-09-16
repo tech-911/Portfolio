@@ -2,22 +2,30 @@
   .portfolio-container {
     display: none;
   }
- 
 }
 
-@media only screen and (max-width: 598px) {
-  .custom-css-1 {
-    height: 700px !important;
-    background-size: 1320px 600px !important;
-  }
-}
+/* @media only screen and (max-width: 598px) {
+ 
+} */
 
 @media only screen and (max-width: 799px) and (min-width: 768px) {
-  .custom-css-1 {
-   margin-left: 50px;
-   margin-right: 50px;
+  .portfolio-adjust {
+    margin-left: 50px;
+    margin-right: 50px;
   }
-  .container{
+  .container {
     width: unset !important;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .portfolio-container {
+    padding-left: 13.5px;
+    padding-right: 13.5px;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .adjust-portfolio-button {
+    width: 70% !important;
   }
 }

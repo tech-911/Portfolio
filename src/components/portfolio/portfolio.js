@@ -19,7 +19,7 @@ const Portfolio = () => {
 
       {/* ----------------------------portfolio content start-------------------------------------- */}
 
-      <div className="font-[inter] container mx-auto px-10 bg-white mb-10 pb-10 pt-4">
+      <div className="font-[inter] container mx-auto px-10 bg-white mb-10 pb-10 pt-4 portfolio-adjust">
         <div className="flex flex-col items-center pb-6 border-b-[1px] border-[#F0F0F6] mt-8">
           <div className="flex items-center justify-between w-full mb-2">
             <div className="bg-[#FFB400] py-1 px-2 text-[15px]">Age:</div>
@@ -124,7 +124,7 @@ const Portfolio = () => {
         </div>
         <div className="flex flex-col items-center pb-6 border-[#F0F0F6] mt-16">
           <button
-            className=" text-[16px] text-black font-semibold  px-6 py-3 bg-[#FFB400] w-[40%] mb-5"
+            className="adjust-portfolio-button text-[16px] text-black font-semibold  px-6 py-3 bg-[#FFB400] w-[40%] mb-5"
             type="button"
           >
             <a
