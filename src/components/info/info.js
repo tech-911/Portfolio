@@ -1,14 +1,34 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./info.css";
 import Logo from "../../assets/profileLogo.png";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaFacebookF } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BiDownload } from "react-icons/bi";
 import ExtraSkills from "../../assets/extra_skills.png";
 import { Link } from "react-router-dom";
 
 const Info = () => {
+  const birthdate = "2000-01-07";
+
+  const getAge = (birthdate) => {
+    const birthDate = new Date(birthdate);
+    const currentDate = new Date();
+    let age = currentDate.getFullYear() - birthDate.getFullYear();
+
+    // Check if the birthday has occurred this year
+    const isBirthdayPassed =
+      currentDate.getMonth() > birthDate.getMonth() ||
+      (currentDate.getMonth() === birthDate.getMonth() &&
+        currentDate.getDate() >= birthDate.getDate());
+
+    if (!isBirthdayPassed) {
+      age--;
+    }
+
+    return age;
+  };
+
   return (
     <div className="font-[inter] container mx-auto px-4 bg-white">
       <div className="flex flex-col items-center pb-10 border-b-[1px] border-[#F0F0F6]">
@@ -41,19 +61,25 @@ const Info = () => {
           >
             <FaLinkedinIn className="text-[#2B2B2B]" />
           </a>
+          <a
+            href="https://github.com/tech-911"
+            className="rounded-[50%] bg-[#FFB400] p-1.5 ml-2"
+          >
+            <FaGithub className="text-[#2B2B2B]" />
+          </a>
         </div>
       </div>
       <div className="flex flex-col items-center pb-6 border-b-[1px] border-[#F0F0F6] mt-8">
         <div className="flex items-center justify-between w-full mb-2">
           <div className="bg-[#FFB400] py-1 px-2 text-[15px]">Age:</div>
-          <div className="text-[15px]">22</div>
+          <div className="text-[15px]">{getAge(birthdate)}</div>
         </div>
         <div className="flex items-center justify-between w-full mb-2">
-          <div className="bg-[#FFB400] py-1 px-2 text-[15px]">Address:</div>
-          <div className="text-[15px]">Dutsen K. M.</div>
+          <div className="bg-[#FFB400] py-1 px-2 text-[15px]">Location:</div>
+          <div className="text-[15px]">Nigeria</div>
         </div>
         <div className="flex items-center justify-between w-full mb-2">
-          <div className="bg-[#FFB400] py-1 px-2 text-[15px]">Freelance:</div>
+          <div className="bg-[#FFB400] py-1 px-2 text-[15px]">Status:</div>
           <div className="text-[15px] text-[#7EB942]">Available</div>
         </div>
       </div>
@@ -72,61 +98,84 @@ const Info = () => {
           </div>
         </div>
       </div>
+
       <div className="flex flex-col items-center pb-6 border-b-[1px] border-[#F0F0F6] mt-8">
         <h1 className="text-[18px] text-[#2B2B2B] font-semibold mb-4 self-start">
-          Skills
+          Fronend Skills
         </h1>
-
-        <div className="w-full mb-3">
-          <div className="flex items-center justify-between w-full mb-3">
-            <p className="text-[15px] text-[#767676] ">Html</p>
-            <p className="text-[15px] text-[#767676] ">100%</p>
-          </div>
-          <div className="w-full rounded-full px-0.5 py-0.5 border-[1px] border-[#FFB400]">
-            <div className="bg-[#FFB400] h-0.5 rounded-full w-[100%]"></div>
-          </div>
+        <div className="flex items-center self-start mb-2">
+          <img src={ExtraSkills} alt="extra skills icon" />
+          <p className="text-[15px] text-[#767676] ml-3">HTML</p>
         </div>
-        <div className="w-full mb-3">
-          <div className="flex items-center justify-between w-full mb-3">
-            <p className="text-[15px] text-[#767676] ">CSS</p>
-            <p className="text-[15px] text-[#767676] ">80%</p>
-          </div>
-          <div className="w-full rounded-full px-0.5 py-0.5 border-[1px] border-[#FFB400]">
-            <div className="bg-[#FFB400] h-0.5 rounded-full w-[80%]"></div>
-          </div>
+        <div className="flex items-center self-start mb-2">
+          <img src={ExtraSkills} alt="extra skills icon" />
+          <p className="text-[15px] text-[#767676] ml-3">CSS</p>
         </div>
-        <div className="w-full mb-3">
-          <div className="flex items-center justify-between w-full mb-3">
-            <p className="text-[15px] text-[#767676] ">Js</p>
-            <p className="text-[15px] text-[#767676] ">75%</p>
-          </div>
-          <div className="w-full rounded-full px-0.5 py-0.5 border-[1px] border-[#FFB400]">
-            <div className="bg-[#FFB400] h-0.5 rounded-full w-[75%]"></div>
-          </div>
+        <div className="flex items-center self-start mb-2">
+          <img src={ExtraSkills} alt="extra skills icon" />
+          <p className="text-[15px] text-[#767676] ml-3">JavaScript</p>
         </div>
-        <div className="w-full mb-3">
-          <div className="flex items-center justify-between w-full mb-3">
-            <p className="text-[15px] text-[#767676] ">React</p>
-            <p className="text-[15px] text-[#767676] ">80%</p>
-          </div>
-          <div className="w-full rounded-full px-0.5 py-0.5 border-[1px] border-[#FFB400]">
-            <div className="bg-[#FFB400] h-0.5 rounded-full w-[80%]"></div>
-          </div>
+        <div className="flex items-center self-start mb-2">
+          <img src={ExtraSkills} alt="extra skills icon" />
+          <p className="text-[15px] text-[#767676] ml-3">React.js</p>
         </div>
-
-        <div className="w-full mb-3">
-          <div className="flex items-center justify-between w-full mb-3">
-            <p className="text-[15px] text-[#767676] ">Figma</p>
-            <p className="text-[15px] text-[#767676] ">75%</p>
-          </div>
-          <div className="w-full rounded-full px-0.5 py-0.5 border-[1px] border-[#FFB400]">
-            <div className="bg-[#FFB400] h-0.5 rounded-full w-[75%]"></div>
-          </div>
+        <div className="flex items-center self-start mb-2">
+          <img src={ExtraSkills} alt="extra skills icon" />
+          <p className="text-[15px] text-[#767676] ml-3">Next.js</p>
+        </div>
+        <div className="flex items-center self-start mb-2">
+          <img src={ExtraSkills} alt="extra skills icon" />
+          <p className="text-[15px] text-[#767676] ml-3">React Native</p>
+        </div>
+        <div className="flex items-center self-start mb-2">
+          <img src={ExtraSkills} alt="extra skills icon" />
+          <p className="text-[15px] text-[#767676] ml-3">Typescript</p>
+        </div>
+        <div className="flex items-center self-start mb-2">
+          <img src={ExtraSkills} alt="extra skills icon" />
+          <p className="text-[15px] text-[#767676] ml-3">Zod</p>
+        </div>
+        <div className="flex items-center self-start mb-2">
+          <img src={ExtraSkills} alt="extra skills icon" />
+          <p className="text-[15px] text-[#767676] ml-3">React Hook Form</p>
+        </div>
+        <div className="flex items-center self-start mb-2">
+          <img src={ExtraSkills} alt="extra skills icon" />
+          <p className="text-[15px] text-[#767676] ml-3">Axios</p>
         </div>
       </div>
       <div className="flex flex-col items-center pb-6 border-b-[1px] border-[#F0F0F6] mt-8">
         <h1 className="text-[18px] text-[#2B2B2B] font-semibold mb-4 self-start">
-          Extra Skills
+          CSS Libraries/ Frameworks
+        </h1>
+        <div className="flex items-center self-start mb-2">
+          <img src={ExtraSkills} alt="extra skills icon" />
+          <p className="text-[15px] text-[#767676] ml-3">Tailwind CSS</p>
+        </div>
+        <div className="flex items-center self-start mb-2">
+          <img src={ExtraSkills} alt="extra skills icon" />
+          <p className="text-[15px] text-[#767676] ml-3">Framer Motion</p>
+        </div>
+        <div className="flex items-center self-start mb-2">
+          <img src={ExtraSkills} alt="extra skills icon" />
+          <p className="text-[15px] text-[#767676] ml-3">Bootstrap</p>
+        </div>
+        <div className="flex items-center self-start mb-2">
+          <img src={ExtraSkills} alt="extra skills icon" />
+          <p className="text-[15px] text-[#767676] ml-3">Mantine UI</p>
+        </div>
+        <div className="flex items-center self-start mb-2">
+          <img src={ExtraSkills} alt="extra skills icon" />
+          <p className="text-[15px] text-[#767676] ml-3">Shadcn UI</p>
+        </div>
+        <div className="flex items-center self-start mb-2">
+          <img src={ExtraSkills} alt="extra skills icon" />
+          <p className="text-[15px] text-[#767676] ml-3">Sass</p>
+        </div>
+      </div>
+      <div className="flex flex-col items-center pb-6 border-b-[1px] border-[#F0F0F6] mt-8">
+        <h1 className="text-[18px] text-[#2B2B2B] font-semibold mb-4 self-start">
+          State Managment
         </h1>
         <div className="flex items-center self-start mb-2">
           <img src={ExtraSkills} alt="extra skills icon" />
@@ -134,15 +183,62 @@ const Info = () => {
         </div>
         <div className="flex items-center self-start mb-2">
           <img src={ExtraSkills} alt="extra skills icon" />
-          <p className="text-[15px] text-[#767676] ml-3">Tailwind CSS</p>
+          <p className="text-[15px] text-[#767676] ml-3">Context Api</p>
+        </div>
+      </div>
+      <div className="flex flex-col items-center pb-6 border-b-[1px] border-[#F0F0F6] mt-8">
+        <h1 className="text-[18px] text-[#2B2B2B] font-semibold mb-4 self-start">
+          Backend Skills
+        </h1>
+        <div className="flex items-center self-start mb-2">
+          <img src={ExtraSkills} alt="extra skills icon" />
+          <p className="text-[15px] text-[#767676] ml-3">Node.js/Express.js</p>
         </div>
         <div className="flex items-center self-start mb-2">
           <img src={ExtraSkills} alt="extra skills icon" />
-          <p className="text-[15px] text-[#767676] ml-3">Bootstrap</p>
+          <p className="text-[15px] text-[#767676] ml-3">Mongoose/ MongoDB</p>
         </div>
-        <div className="flex items-center self-start">
+        <div className="flex items-center self-start mb-2">
           <img src={ExtraSkills} alt="extra skills icon" />
-          <p className="text-[15px] text-[#767676] ml-3">GIT Knowledge</p>
+          <p className="text-[15px] text-[#767676] ml-3">Firebase Auth</p>
+        </div>
+        <div className="flex items-center self-start mb-2">
+          <img src={ExtraSkills} alt="extra skills icon" />
+          <p className="text-[15px] text-[#767676] ml-3">Google Oauth</p>
+        </div>
+        <div className="flex items-center self-start mb-2">
+          <img src={ExtraSkills} alt="extra skills icon" />
+          <p className="text-[15px] text-[#767676] ml-3">Cloudinary</p>
+        </div>
+        <div className="flex items-center self-start mb-2">
+          <img src={ExtraSkills} alt="extra skills icon" />
+          <p className="text-[15px] text-[#767676] ml-3">JWT</p>
+        </div>
+        <div className="flex items-center self-start mb-2">
+          <img src={ExtraSkills} alt="extra skills icon" />
+          <p className="text-[15px] text-[#767676] ml-3">Twillio</p>
+        </div>
+      </div>
+      <div className="flex flex-col items-center pb-6 border-b-[1px] border-[#F0F0F6] mt-8">
+        <h1 className="text-[18px] text-[#2B2B2B] font-semibold mb-4 self-start">
+          Deployment Platforms Used
+        </h1>
+        <div className="flex items-center self-start mb-2">
+          <img src={ExtraSkills} alt="extra skills icon" />
+          <p className="text-[15px] text-[#767676] ml-3">Vercel</p>
+        </div>
+        <div className="flex items-center self-start mb-2">
+          <img src={ExtraSkills} alt="extra skills icon" />
+          <p className="text-[15px] text-[#767676] ml-3">Render</p>
+        </div>
+      </div>
+      <div className="flex flex-col items-center pb-6 border-b-[1px] border-[#F0F0F6] mt-8">
+        <h1 className="text-[18px] text-[#2B2B2B] font-semibold mb-4 self-start">
+          Version Control
+        </h1>
+        <div className="flex items-center self-start mb-2">
+          <img src={ExtraSkills} alt="extra skills icon" />
+          <p className="text-[15px] text-[#767676] ml-3">Git & Git-hub</p>
         </div>
       </div>
       <div className="flex flex-col items-center pb-6 border-b-[1px] border-[#F0F0F6] mt-8">
@@ -152,7 +248,7 @@ const Info = () => {
         >
           <a
             className="flex items-center justify-between"
-            href="/CV.docx"
+            href="/cv.pdf"
             download
           >
             <p className="text-[14px] font-bold">DOWNLOAD CV</p>

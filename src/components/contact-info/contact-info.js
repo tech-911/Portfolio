@@ -1,6 +1,7 @@
 import React from "react";
 
 const ContactInfo = ({ data, id }) => {
+  // console.log("type: ", data[0]?.type);
   return (
     <div className="bg-white px-6 py-5 w-full mb-4">
       {data.map((value, id) => {
@@ -11,30 +12,66 @@ const ContactInfo = ({ data, id }) => {
             </div>
 
             <div className="flex flex-col w-full">
-              <div className="flex items-start justify-between mb-2 w-full">
-                <h1 className="text-[#767676] font-semibold text-[18px]">
+              <div className="flex items-center gap-2 mb-2 w-full">
+                <h1 className="text-[#767676] w-fit font-semibold text-[18px]">
                   {value.itemName[0]}:{" "}
                 </h1>
-                <p className="break-all ml-4 text-[#767676] text-[15px]">
+                <p
+                  href={value.itemValue[0]}
+                  className="break-all text-[#767676] text-[15px] hover:text-[#FFB400]"
+                >
                   {value.itemValue[0]}
                 </p>
               </div>
-              <div className="flex items-start justify-between mb-2">
-                <h1 className="text-[#767676] font-semibold text-[18px]">
+              <div className="flex items-center gap-2 mb-2">
+                <h1 className="text-[#767676] w-fit font-semibold text-[18px]">
                   {value.itemName[1]}:{" "}
                 </h1>
-                <p className="break-all ml-4 text-[#767676] text-[15px]">
-                  {value.itemValue[1]}
-                </p>
+                {data[0]?.type === "email" ? (
+                  <a
+                    href={value.itemValue[1]}
+                    className="break-all text-[#767676] text-[15px] hover:text-[#FFB400]"
+                  >
+                    {value.itemValue[1]}
+                  </a>
+                ) : (
+                  <p className="break-all text-[#767676] text-[15px] hover:text-[#FFB400]">
+                    {value.itemValue[1]}
+                  </p>
+                )}
               </div>
-              <div className="flex items-start justify-between">
-                <h1 className="text-[#767676] font-semibold text-[18px]">
+              <div className="flex items-center gap-2">
+                <h1 className="text-[#767676] w-fit font-semibold text-[18px]">
                   {value.itemName[2]}:{" "}
                 </h1>
-                <p className="break-all ml-4 text-[#767676] text-[15px]">
-                  {value.itemValue[2]}
-                </p>
+                {data[0]?.type === "email" ? (
+                  <a
+                    href={value.itemValue[1]}
+                    className="break-all text-[#767676] text-[15px] hover:text-[#FFB400]"
+                  >
+                    {value.itemValue[2]}
+                  </a>
+                ) : (
+                  <p className="break-all text-[#767676] text-[15px] hover:text-[#FFB400]">
+                    {value.itemValue[2]}
+                  </p>
+                )}
               </div>
+              {value.itemValue[3] ? (
+                <div className="flex items-center gap-2">
+                  <h1 className="text-[#767676] w-fit font-semibold text-[18px]">
+                    {value.itemName[3]}:{" "}
+                  </h1>
+                  <a
+                    href={value.itemValue[3]}
+                    className="break-all text-[#767676] text-[15px] hover:text-[#FFB400]"
+                  >
+                    {value.itemValue[3]}
+                  </a>
+                </div>
+              ) : (
+                ""
+              )}
             </div>
           </div>
         );

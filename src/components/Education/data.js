@@ -1,31 +1,29 @@
 const educationData = [
   {
-    heading: "University of Toronto",
-    heading2: "Certificate of Web Training",
+    heading: "Federal University of Technology Minna",
+    heading2: "B.Eng. Mechatronics Engineering",
     value: "Student",
-    value2:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui.",
-    timeLine: "Jan 2017 - Date",
+    value2: `First Class Honors. CGPA: 4.85/5.00.<br>Best graduating student, School of Electrical Electronics Engineering.`,
+    timeLine: "September 2017 - January 2024",
     id: 0,
     borderBottom: true,
   },
   {
-    heading: "Programming Course",
-    heading2: "Certificate of Web Training",
+    heading: "Mypa College Minna",
+    heading2: "Senior Secondary School Certificate",
     value: "Student",
     value2:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui.",
-    timeLine: "Jan 2017 - Date",
+      "Senior Secondary School Certificate (WAEC and NECO).<br>Best Graduating Student, 2017.",
+    timeLine: "January 2011 - July 2017",
     id: 1,
     borderBottom: true,
   },
   {
-    heading: "Web Developer Courses",
-    heading2: "Certificate of Web Training",
+    heading: "Mypa Primary School Minna Niger State.",
+    heading2: "First School Leaving Certificate.",
     value: "Student",
-    value2:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui.",
-    timeLine: "Jan 2017 - Date",
+    value2: "",
+    timeLine: "Graduated 2011.",
     id: 2,
     borderBottom: false,
   },

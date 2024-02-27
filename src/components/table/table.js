@@ -6,7 +6,7 @@ const Table = ({ data }) => {
       {data.map((value, id) => {
         return (
           <div
-            key={value.id}
+            key={id}
             className={`flex items-start justify-between font-[inter] ${
               value.borderBottom ? "border-b-[#F0F0F6] border-b-[1px]" : ""
             }  mb-6 table-responsive`}
@@ -17,9 +17,13 @@ const Table = ({ data }) => {
               </h1>
               <div className="flex items-start">
                 <p className="text-[15px]">{value.value}</p>
-                <div className="text-white px-2 py-1 bg-[#FFB400] text-[12px] ml-4">
-                  {value.timeLine}
-                </div>
+                {value.timeLine ? (
+                  <div className="text-white px-2 py-1 bg-[#FFB400] text-[12px] ml-4">
+                    {value.timeLine}
+                  </div>
+                ) : (
+                  ""
+                )}
               </div>
             </div>
 
@@ -27,9 +31,13 @@ const Table = ({ data }) => {
               <h1 className="mb-3 text-[18px] font-semibold text-[#2B2B2B]">
                 {value.heading2}
               </h1>
-              <p className="text-[15px] text-[#767676] text-justify">
+              {/* <p className="text-[15px] text-[#767676] text-justify">
                 {value.value2}
-              </p>
+              </p> */}
+              <span
+                className="text-[15px] text-[#767676] text-justify"
+                dangerouslySetInnerHTML={{ __html: value.value2 }}
+              />
             </div>
           </div>
         );

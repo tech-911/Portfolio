@@ -19,6 +19,7 @@ import { FaUserGraduate } from "react-icons/fa";
 import { FaToolbox } from "react-icons/fa";
 import { RiQuillPenFill } from "react-icons/ri";
 import { MdChatBubble, MdClose } from "react-icons/md";
+import { HiLocationMarker } from "react-icons/hi";
 
 const Home = () => {
   const [sidebar, setSidebar] = useState(0);
@@ -152,20 +153,6 @@ const Home = () => {
                 </p>
               </a>
               <a
-                href="#blog"
-                className="flex items-center w-full hover:border-r-4 hover:border-[#FFB400] mb-8 cursor-pointer py-2"
-              >
-                <a
-                  href="#blog"
-                  className="rounded-[50%] p-1.5 bg-[#F0F0F6] w-fit flex items-center justify-center"
-                >
-                  <RiQuillPenFill className="text-[23px] text-[#767676] hover:text-[#2B2B2B]" />
-                </a>
-                <p className="font-[inter] font-bold text-[24px] text-[#767676] ml-8">
-                  Blog
-                </p>
-              </a>
-              <a
                 href="#contact"
                 className="flex items-center w-full hover:border-r-4 hover:border-[#FFB400] mb-8 cursor-pointer py-2"
               >
@@ -177,6 +164,20 @@ const Home = () => {
                 </a>
                 <p className="font-[inter] font-bold text-[24px] text-[#767676] ml-8">
                   Contact
+                </p>
+              </a>
+              <a
+                href="#map"
+                className="flex items-center w-full hover:border-r-4 hover:border-[#FFB400] mb-8 cursor-pointer py-2"
+              >
+                <a
+                  href="#map"
+                  className="rounded-[50%] p-1.5 bg-[#F0F0F6] w-fit flex items-center justify-center"
+                >
+                  <HiLocationMarker className="text-[23px] text-[#767676] hover:text-[#2B2B2B]" />
+                </a>
+                <p className="font-[inter] font-bold text-[24px] text-[#767676] ml-8">
+                  Location
                 </p>
               </a>
             </div>
@@ -198,7 +199,7 @@ const Home = () => {
               <div className="w-full px-5 box-border home-res-1">
                 <Header />
                 <Portfolio />
-                <Services />
+                {/* <Services /> */}
                 <Recommendations />
                 <Education />
                 <WorkExperience />

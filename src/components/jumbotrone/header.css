@@ -1,6 +1,6 @@
 .custom-css-1 {
   background-image: url("../../assets/bg2.svg");
-  height: 550px;
+  /* height: 650px; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1320px 520px;
@@ -12,7 +12,7 @@
     display: none;
   }
   .header-res1 * {
-    text-align: center;
+    text-align: justify;
   }
   .header-res1 {
     display: flex;
@@ -24,19 +24,30 @@
   }
 }
 
+@media only screen and (max-width: 1424px) {
+  .header-res1 .res1 {
+    width: 60% !important;
+  }
+}
+@media only screen and (max-width: 1030px) {
+  .header-res1 .res1 {
+    width: 100% !important;
+  }
+}
+
 @media only screen and (max-width: 598px) {
   .custom-css-1 {
-    height: 700px !important;
+    /* height: 700px !important; */
     background-size: 1320px 600px !important;
   }
 }
 
 @media only screen and (max-width: 799px) and (min-width: 768px) {
   .custom-css-1 {
-   margin-left: 50px;
-   margin-right: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
-  .container{
+  .container {
     width: unset !important;
   }
 }

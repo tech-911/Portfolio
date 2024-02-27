@@ -1,10 +1,15 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import ContactInfo from "../contact-info/contact-info";
 import contactInfoData from "./data";
 import emailjs from "emailjs-com";
 import "./contact.css";
+import { toast } from "react-toastify";
+
 const Contact = () => {
+  const [loading, setLoading] = useState(false);
+
   const handleForm = (e) => {
+    setLoading(true);
     e.preventDefault();
     emailjs
       .sendForm(
@@ -15,10 +20,13 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          alert(result.text);
+          setLoading(false);
+          toast.success(`Success: ${result.text}`);
+          console.log(form.current[0], form.current[0].value);
         },
         (error) => {
-          alert(error.text);
+          setLoading(false);
+          toast.error(`Error: ${error.text}`);
         }
       );
     e.target.reset();
@@ -27,6 +35,7 @@ const Contact = () => {
     // console.log([form.current.value]);
   };
   const form = useRef();
+  console.log(form.current);
   return (
     <div className="font-[inter] mb-10 container mx-auto contact" id="contact">
       <div className="flex items-start justify-between mb-10">
@@ -100,11 +109,12 @@ const Contact = () => {
             </div>
 
             <button
+              disabled={loading}
               className="bg-[#FFB400] text-[14px] text-[2B2B2B] py-3 px-5 font-bold"
               type="submit"
               //   onClick={handleForm}
             >
-              SEND MESSAGE
+              {loading ? "Sending..." : "SEND MESSAGE"}
             </button>
           </div>
         </form>

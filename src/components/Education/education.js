@@ -10,7 +10,7 @@ const Education = () => {
       <div className="mb-10">
         <Topic
           heading="Education"
-          value="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum"
+          value=""
         />
       </div>
       <Table data={data} />
