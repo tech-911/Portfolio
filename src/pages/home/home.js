@@ -79,7 +79,7 @@ const Home = () => {
             sidebar ? "w-[40%] res-width" : "w-[0%]"
           }`}
         >
-          <div className="py-6 mb-6">
+          <div className="pt-6 pb-20 mb-6">
             <div className="flex flex-col items-center justify-center border-b-2 border-[#F0F0F6] mb-10">
               <div className="after:content after:block after:relative after:rounded-[50px] after:bg-[#7EB942] after:h-4 after:w-4 after:-top-6 after:left-28 mt-10 ">
                 <img src={Logo} alt="status" />

@@ -201,8 +201,9 @@ const Portfolio = () => {
           >
             <a
               className="flex items-center justify-between"
-              href="/cv.pdf"
-              download
+              href="https://drive.google.com/file/d/1VKLx8eUpnDA1kGk4Ojz3Prqf4OwCUCDt/view?usp=sharing"
+              // href="/cv.pdf"
+              // download
             >
               <p className="text-[14px] font-bold">DOWNLOAD CV</p>
               <BiDownload className="text-[20px]" />
