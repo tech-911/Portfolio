@@ -9,12 +9,22 @@ const educationData = [
     borderBottom: true,
   },
   {
+    heading: "Kuadratik Technologies Ltd.",
+    heading2: "Build company's MVP",
+    value: "Frontend Developer",
+    value2:
+      "Building a modular, interactive, pixel perfect UI application that enables school managements streamline routine school workflows to focus on what matters most - students! Link: <a href='https://kuadratic-dashboard-clone.vercel.app'>https://Kuadratik-dashboard</a>",
+    timeLine: "2024 - Date",
+    id: 0,
+    borderBottom: true,
+  },
+  {
     heading: "Vladen Technologies Ltd.",
     heading2: "Build company's MVP",
     value: "Frontend Developer",
     value2:
       "Worked on an integrated retail management payment solution that gives businesses and Businesses a 360-degree view of their business and payment collections as well as a platform to create and integrate multiple payment collection options. Link: <a href='http://137.184.47.182:3000/home'>Payaccess-business/home</a>",
-    timeLine: "2023 - Date",
+    timeLine: "2023 - 2024",
     id: 0,
     borderBottom: true,
   },
