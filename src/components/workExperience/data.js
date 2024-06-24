@@ -23,7 +23,7 @@ const educationData = [
     heading2: "Build company's MVP",
     value: "Frontend Developer",
     value2:
-      "Worked on an integrated retail management payment solution that gives businesses and Businesses a 360-degree view of their business and payment collections as well as a platform to create and integrate multiple payment collection options. Link: <a href='http://137.184.47.182:3000/home'>Payaccess-business/home</a>",
+      "Worked on an integrated retail management payment solution that gives businesses and Businesses a 360-degree view of their business and payment collections as well as a platform to create and integrate multiple payment collection options.",
     timeLine: "2023 - 2024",
     id: 0,
     borderBottom: true,

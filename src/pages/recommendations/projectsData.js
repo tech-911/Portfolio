@@ -22,19 +22,19 @@ const projectGallary = [
     tools: "Tools Used: Next.js",
     logo: Kuadratik,
   },
-  {
-    heading: "Vladen Tech. Ltd.",
-    heading2: "Build company's MVP",
-    value: "Frontend Developer",
-    value2:
-      "Worked on an integrated retail management payment solution that gives businesses and Businesses a 360-degree view of their business and payment collections as well as a platform to create and integrate multiple payment collection options.",
-    timeLine: "2023 - Date",
-    link: "<a href='http://137.184.47.182:3000/home'>Payaccess.com</a>",
-    id: 0,
-    borderBottom: true,
-    tools: "Tools Used: Next.js",
-    logo: payaccess,
-  },
+  // {
+  //   heading: "Vladen Tech. Ltd.",
+  //   heading2: "Build company's MVP",
+  //   value: "Frontend Developer",
+  //   value2:
+  //     "Worked on an integrated retail management payment solution that gives businesses and Businesses a 360-degree view of their business and payment collections as well as a platform to create and integrate multiple payment collection options.",
+  //   timeLine: "2023 - Date",
+  //   link: "<a href='http://137.184.47.182:3000/home'>Payaccess.com</a>",
+  //   id: 0,
+  //   borderBottom: true,
+  //   tools: "Tools Used: Next.js",
+  //   logo: payaccess,
+  // },
   {
     heading: "Dawah Nigeria",
     heading2: "DN-Demo",
