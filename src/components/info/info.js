@@ -143,6 +143,14 @@ const Info = () => {
           <img src={ExtraSkills} alt="extra skills icon" />
           <p className="text-[15px] text-[#767676] ml-3">Axios</p>
         </div>
+        <div className="flex items-center self-start mb-2">
+          <img src={ExtraSkills} alt="extra skills icon" />
+          <p className="text-[15px] text-[#767676] ml-3">Tanstack Query</p>
+        </div>
+        <div className="flex items-center self-start mb-2">
+          <img src={ExtraSkills} alt="extra skills icon" />
+          <p className="text-[15px] text-[#767676] ml-3">Jest (Testing)</p>
+        </div>
       </div>
       <div className="flex flex-col items-center pb-6 border-b-[1px] border-[#F0F0F6] mt-8">
         <h1 className="text-[18px] text-[#2B2B2B] font-semibold mb-4 self-start">
@@ -184,6 +192,10 @@ const Info = () => {
         <div className="flex items-center self-start mb-2">
           <img src={ExtraSkills} alt="extra skills icon" />
           <p className="text-[15px] text-[#767676] ml-3">Context Api</p>
+        </div>
+        <div className="flex items-center self-start mb-2">
+          <img src={ExtraSkills} alt="extra skills icon" />
+          <p className="text-[15px] text-[#767676] ml-3">Zustand</p>
         </div>
       </div>
       <div className="flex flex-col items-center pb-6 border-b-[1px] border-[#F0F0F6] mt-8">
