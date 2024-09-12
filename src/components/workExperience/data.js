@@ -9,12 +9,22 @@ const educationData = [
     borderBottom: true,
   },
   {
+    heading: "Stay Homes Ltd.",
+    heading2: "Build company's MVP",
+    value: "Frontend Developer",
+    value2:
+      "Worked on web application that enables search, rent, mortgage, outrightly purchase, book and invest in real estate properties across Africa. Stay provides you with every necessary information that can help make informed housing decision. Link: <a href='https://stay-frontend.vercel.app/home'>https://stay-homes</a>",
+    timeLine: "2024 - Date",
+    id: 0,
+    borderBottom: true,
+  },
+  {
     heading: "Kuadratik Technologies Ltd.",
     heading2: "Build company's MVP",
     value: "Frontend Developer",
     value2:
       "Building a modular, interactive, pixel perfect UI application that enables school managements streamline routine school workflows to focus on what matters most - students! Link: <a href='https://kuadratic-dashboard-clone.vercel.app'>https://Kuadratik-dashboard</a>",
-    timeLine: "2024 - Date",
+    timeLine: "2024",
     id: 0,
     borderBottom: true,
   },

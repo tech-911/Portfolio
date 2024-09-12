@@ -6,7 +6,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BiDownload } from "react-icons/bi";
 import ExtraSkills from "../../assets/extra_skills.png";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 const Portfolio = () => {
   const birthdate = "2000-01-07";
 

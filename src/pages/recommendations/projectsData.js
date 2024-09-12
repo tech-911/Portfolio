@@ -8,6 +8,7 @@ import zuri from "../../assets/gallary-logos/zuri.jpg";
 import renager from "../../assets/gallary-logos/renager.png";
 import davis from "../../assets/recommend1.png";
 import lendsqr from "../../assets/lendsqr.png";
+import stay from "../../assets/gallary-logos/stay-logo.png";
 
 const projectGallary = [
   {
@@ -135,6 +136,18 @@ const projectGallary = [
     borderBottom: true,
     tools: "react.js",
     logo: renager,
+  },
+  {
+    heading: "Stay Homes",
+    heading2: "Stay Homes",
+    value: "Freelance",
+    value2: "Developed a rentals manager application UI.",
+    timeLine: "2024",
+    link: "<a href='https://stay-frontend.vercel.app/home'>stay-home.com</a>",
+    id: 9,
+    borderBottom: true,
+    tools: "Next.js",
+    logo: stay,
   },
 ];
 

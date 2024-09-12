@@ -3,7 +3,7 @@ import Header from "../../components/jumbotrone/header";
 import Menu from "../../components/fixed_menu/menu";
 import Info from "../../components/info/info";
 import "./home.css";
-import Services from "../myServices/service";
+// import Services from "../myServices/service";
 import Recommendations from "../recommendations/recommendations";
 import Education from "../../components/Education/education";
 import WorkExperience from "../../components/workExperience/work";
@@ -17,7 +17,7 @@ import { RiHome2Fill } from "react-icons/ri";
 import { FaFileCode } from "react-icons/fa";
 import { FaUserGraduate } from "react-icons/fa";
 import { FaToolbox } from "react-icons/fa";
-import { RiQuillPenFill } from "react-icons/ri";
+// import { RiQuillPenFill } from "react-icons/ri";
 import { MdChatBubble, MdClose } from "react-icons/md";
 import { HiLocationMarker } from "react-icons/hi";
 
