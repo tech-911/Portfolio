@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./info.css";
-import Logo from "../../assets/profileLogo.png";
+import Logo from "../../assets/recent-logo.png";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
@@ -32,7 +32,7 @@ const Info = () => {
   return (
     <div className="font-[inter] container mx-auto px-4 bg-white">
       <div className="flex flex-col items-center pb-10 border-b-[1px] border-[#F0F0F6]">
-        <div className="after:content after:block after:relative after:rounded-[50px] after:bg-[#7EB942] after:h-4 after:w-4 after:-top-6 after:left-28 mt-10">
+        <div className="relative h-[200px] w-[200px] rounded-full flex flex-row items-center justify-center after:absolute after:z-[1] after:rounded-[50px] after:bg-[#7EB942] after:h-6 after:w-6 after:top-[170px] after:left-[145px] my-10">
           <img src={Logo} alt="status" />
         </div>
         <div className="flex flex-col items-center mb-4">
@@ -260,7 +260,7 @@ const Info = () => {
         >
           <a
             className="flex items-center justify-between"
-            href="https://drive.google.com/file/d/1ndT_4pZ05GuP7nnu4n1mAOdG3492n3b8/view?usp=sharing"
+            href="https://drive.google.com/file/d/1fUpMYfrUD_6YfwkaXGkiHQ7lcVKePrWA/view?usp=sharing"
             // href="/cv.pdf"
             // download
           >

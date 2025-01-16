@@ -9,6 +9,8 @@ import renager from "../../assets/gallary-logos/renager.png";
 import davis from "../../assets/recommend1.png";
 import lendsqr from "../../assets/lendsqr.png";
 import stay from "../../assets/gallary-logos/stay-logo.png";
+import game from "../../assets/gallary-logos/game.png";
+import gas from "../../assets/gallary-logos/GasVision.png";
 
 const projectGallary = [
   {
@@ -148,6 +150,30 @@ const projectGallary = [
     borderBottom: true,
     tools: "Next.js",
     logo: stay,
+  },
+  {
+    heading: "Gamer's Helper",
+    heading2: "Build company's MVP",
+    value: "Frontend Developer",
+    value2: "Building a modular, interactive, pixel perfect UI application.",
+    timeLine: "2024 - Date",
+    link: "<a href='https://play-helper-sigma.vercel.app/dashboard-home'>GETPAIDTOCHEAT</a>",
+    id: 10,
+    borderBottom: true,
+    tools: "Next.js",
+    logo: game,
+  },
+  {
+    heading: "Gas Vision",
+    heading2: "Build company's MVP",
+    value: "Frontend Developer",
+    value2: "Building a modular, interactive, pixel perfect UI application.",
+    timeLine: "2024 - Date",
+    link: "<a href='https://gasyfix-personal.vercel.app/home'>Gasyfix</a>",
+    id: 11,
+    borderBottom: true,
+    tools: "Next.js",
+    logo: gas,
   },
 ];
 

@@ -213,7 +213,7 @@ const Portfolio = () => {
           >
             <a
               className="flex items-center justify-between"
-              href="https://drive.google.com/file/d/1ndT_4pZ05GuP7nnu4n1mAOdG3492n3b8/view?usp=sharing"
+              href="https://drive.google.com/file/d/1fUpMYfrUD_6YfwkaXGkiHQ7lcVKePrWA/view?usp=sharing"
               // href="/cv.pdf"
               // download
             >
