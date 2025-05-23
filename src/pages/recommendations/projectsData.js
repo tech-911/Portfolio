@@ -11,6 +11,7 @@ import lendsqr from "../../assets/lendsqr.png";
 import stay from "../../assets/gallary-logos/stay-logo.png";
 import game from "../../assets/gallary-logos/game.png";
 import gas from "../../assets/gallary-logos/GasVision.png";
+import cardInfra from "../../assets/gallary-logos/Cardinfra.png";
 
 const projectGallary = [
   {
@@ -174,6 +175,18 @@ const projectGallary = [
     borderBottom: true,
     tools: "Next.js",
     logo: gas,
+  },
+  {
+    heading: "Card Infra",
+    heading2: "Build company's MVP",
+    value: "Frontend Developer",
+    value2: "Building a modular, interactive, pixel perfect UI application.",
+    timeLine: "2024 - Date",
+    link: "<a href='https://coreinfra-assessment-test.vercel.app/dashboard'>cardInfra</a>",
+    id: 12,
+    borderBottom: true,
+    tools: "Next.js",
+    logo: cardInfra,
   },
 ];
 
